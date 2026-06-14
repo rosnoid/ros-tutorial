@@ -29,4 +29,8 @@ $ ros2 topic list
 $ ros2 topic echo /turtle1/cmd_vel
 $ ros2 topic info /turtle1/cmd_vel --verbose
 
+$ ros2 topic hz /turtle1/pose  # view message rate
+$ ros2 topic bw /turtle1/pose  # view message bandwidth
+
+$ ros2 topic pub /turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 1.8}}"   # publish message to a topic
 ```
