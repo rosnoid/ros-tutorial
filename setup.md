@@ -27,6 +27,6 @@ $ ros2 run turtlesim turtle_teleop_key
 ```
 $ ros2 topic list
 $ ros2 topic echo /turtle1/cmd_vel
-$ ros2 topic info /turtle1/cmd_vel
+$ ros2 topic info /turtle1/cmd_vel --verbose
 
 ```
