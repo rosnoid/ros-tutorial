@@ -37,7 +37,18 @@ $ ros2 topic pub /turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 2.0, y: 
 # turtlesim_msgs/srv/Kill  request/response schema
 # "{name: 'turtle1'}" service name
 $ ros2 service call /kill turtlesim_msgs/srv/Kill "{name: 'turtle1'}"  
+```
 
 
+# params
+```
+$ ros2 param list #namespace followed by params
+$ ros2 param get /turtlesim background_g
+$ ros2 param set /turtlesim background_r 150
 
 ```
+
+
+
+
+
